@@ -7,8 +7,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const linkClass = (path: string) =>
-    `text-cream-200 hover:text-white transition ${
-      pathname === path ? "font-bold underline" : ""
+    `hover:text-cream-300 transition-colors duration-200 ${
+      pathname === path ? "text-cream-400 underline" : "text-cream-100"
     }`;
 
   return (
@@ -16,13 +16,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
         {/* Logo */}
-        <Link href="/" className="text-2xl font-serif text-cream-100 tracking-wide">
+        <Link
+          href="/"
+          className="text-2xl font-serif text-cream-100 tracking-wide hover:text-cream-300"
+        >
           Healing Forward
         </Link>
 
-        {/* Nav Links */}
+        {/* Links */}
         <div className="flex items-center gap-6">
-
           <Link href="/" className={linkClass("/")}>
             Home
           </Link>
@@ -50,8 +52,8 @@ export default function Navbar() {
           <Link href="/sources" className={linkClass("/sources")}>
             Sources Cited
           </Link>
-
         </div>
+
       </div>
     </nav>
   );
