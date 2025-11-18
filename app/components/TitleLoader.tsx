@@ -1,55 +1,36 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function TitleLoader() {
-  return (
-    <motion.div
-      className="fixed inset-0 bg-[#20160F] flex items-center justify-center z-[9999]"
-      initial={{ opacity: 1 }}
-      animate={{ opacity: 0 }}
-      transition={{ delay: 2.4, duration: 0.8, ease: "easeOut" }}
-    >
-      {/* SVG DRAWING */}
-      <motion.svg
-        width="700"
-        height="300"
-        viewBox="0 0 700 300"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="text-cream-100"
-      >
-        {/* TITLE OUTLINE */}
-        <motion.text
-          x="50%"
-          y="45%"
-          textAnchor="middle"
-          fontSize="64"
-          fontFamily="Georgia, serif"
-          stroke="currentColor"
-          strokeWidth="2"
-          fill="transparent"
-          initial={{ pathLength: 0 }}
-          animate={{ pathLength: 1 }}
-          transition={{ duration: 2, ease: "easeInOut" }}
-        >
-          Generational Trauma
-        </motion.text>
+  const [show, setShow] = useState(true);
 
-        {/* SUBTITLE SWISH UNDERLINE */}
-        <motion.line
-          x1="150"
-          y1="200"
-          x2="550"
-          y2="200"
-          stroke="currentColor"
-          strokeWidth="5"
-          strokeLinecap="round"
-          initial={{ pathLength: 0 }}
-          animate={{ pathLength: 1 }}
-          transition={{ duration: 1.2, delay: 1.4, ease: "easeInOut" }}
-        />
-      </motion.svg>
-    </motion.div>
+  useEffect(() => {
+    const timer = setTimeout(() => setShow(false), 1200);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <AnimatePresence>
+      {show && (
+        <motion.div
+          className="fixed inset-0 bg-[#2b1d0d] z-[99999] flex items-center justify-center pointer-events-none"
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 0 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.h1
+            className="text-5xl md:text-7xl font-serif text-cream-100 tracking-wide"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Healing Forward
+          </motion.h1>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
