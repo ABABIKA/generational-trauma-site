@@ -26,9 +26,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />   {/* ADD THIS */}
-        <div className="pt-20"> {/* Push content down so navbar doesn’t cover it */}
-          {children}
+       <Navbar />
+
+{/* Remove the pt-20 wrapper */}
+<main className="pt-24">
+  {children}
+</main>
+
         </div>
       </body>
     </html>
