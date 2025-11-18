@@ -7,17 +7,19 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const linkClass = (path: string) =>
-    `hover:text-cream-300 transition-colors duration-200 ${
-      pathname === path ? "text-cream-400 underline" : "text-cream-100"
+    `px-4 py-2 font-serif text-lg transition ${
+      pathname === path
+        ? "text-cream-100 border-b-2 border-cream-200"
+        : "text-cream-300 hover:text-cream-100"
     }`;
 
   return (
-   <nav className="w-full bg-[#2b1d0d]/95 backdrop-blur-sm fixed top-0 left-0 z-[9999] shadow-lg">
+    <nav className="w-full bg-[#2b1d0d]/95 backdrop-blur-sm fixed top-0 left-0 z-[9999] shadow-lg">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
         {/* Logo */}
-        <Link
-          href="/"
+        <Link 
+          href="/" 
           className="text-2xl font-serif text-cream-100 tracking-wide hover:text-cream-300"
         >
           Healing Forward
