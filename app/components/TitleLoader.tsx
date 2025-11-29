@@ -1,33 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 export default function TitleLoader() {
-  const [visible, setVisible] = useState(true);
-
-  // After the fade-out animation finishes, remove loader from DOM
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setVisible(false);
-    }, 3200); // 2.4s delay + 0.8s fade-out duration
-
-    return () => clearTimeout(timeout);
-  }, []);
-
-  if (!visible) return null;
-
   return (
     <motion.div
-      className="
-        fixed inset-0 bg-[#20160F] flex items-center justify-center 
-        z-[9999] pointer-events-none
-      "
+      className="fixed inset-0 bg-[#20160F] flex items-center justify-center z-[9999] pointer-events-none"
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
-      transition={{ delay: 2.4, duration: 0.8, ease: 'easeOut' }}
+      transition={{ delay: 2.4, duration: 0.8, ease: "easeOut" }}
     >
-      {/* SVG DRAWING */}
       <motion.svg
         width="700"
         height="300"
@@ -36,7 +18,6 @@ export default function TitleLoader() {
         xmlns="http://www.w3.org/2000/svg"
         className="text-cream-100"
       >
-        {/* TITLE OUTLINE */}
         <motion.text
           x="50%"
           y="45%"
@@ -53,7 +34,6 @@ export default function TitleLoader() {
           Generational Trauma
         </motion.text>
 
-        {/* UNDERLINE */}
         <motion.line
           x1="150"
           y1="200"
