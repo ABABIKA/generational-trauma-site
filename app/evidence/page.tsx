@@ -12,7 +12,6 @@ export default function EvidencePage() {
 
       <SlideSectionTwo
         slides={[
-
           /* --------------------------------------------------------- */
           /* 1 — HOW TRAUMA PASSES THROUGH GENERATIONS                */
           /* --------------------------------------------------------- */
@@ -52,18 +51,18 @@ export default function EvidencePage() {
               </>
             ),
             image: (
-            <div className="flex flex-col items-center>
-            <img
-          src="/trauma-pass.png"
-          className="rounded-xl shadow-lg w-full h-auto object-contain"
-              alt="How Trauma Is Passed Down"
-              />
+              <div className="flex flex-col items-center">
+                <img
+                  src="/trauma-pass.png"
+                  className="rounded-xl shadow-lg w-full h-auto object-contain"
+                  alt="How Trauma Is Passed Down"
+                />
 
-          <p className="text-xs text-cream-300 mt-2 opacity-70">
-          Source: Medica Mondiale. “Transgenerational Trauma.” 
-          Retrieved from https://medicamondiale.org/en/violence-against-women/overcoming-trauma/transgenerational-trauma
-          </p>
-          </div>
+                <p className="text-xs text-cream-300 mt-2 opacity-70">
+                  Source: Medica Mondiale. “Transgenerational Trauma.” Retrieved
+                  from: https://medicamondiale.org/en/violence-against-women/overcoming-trauma/transgenerational-trauma
+                </p>
+              </div>
             ),
           },
 
@@ -85,13 +84,9 @@ export default function EvidencePage() {
 
                 <ul className="list-disc list-inside mt-4 space-y-1">
                   <li>1 in 3 women face physical or sexual violence</li>
-                  <li>
-                    Sexual assault is one of the strongest predictors of PTSD
-                  </li>
+                  <li>Sexual assault is one of the strongest predictors of PTSD</li>
                   <li>Women experience longer-lasting PTSD symptoms</li>
-                  <li>
-                    Caregiving roles can increase stress and trauma burden
-                  </li>
+                  <li>Caregiving roles can increase stress and trauma burden</li>
                 </ul>
 
                 <p className="mt-4">
@@ -101,17 +96,19 @@ export default function EvidencePage() {
                 </p>
               </>
             ),
-image: (
-            <div className="flex flex-col items-center>
-            <img
-          src="/WM-Trauma-Stat.png"
-          className="rounded-xl shadow-lg w-full h-auto object-contain"
-              alt="Who is Most Likely to Experience ACEs?"
-              />
-            <p className="text-xs text-cream-300 mt-2 opacity-70">
-  Source: Georgetown University School of Nursing. “Who Is Most Vulnerable to Adverse Childhood Experiences?”
-  Retrieved from https://online.nursing.georgetown.edu/blog/women-trauma-ptsd/
-</p>
+            image: (
+              <div className="flex flex-col items-center">
+                <img
+                  src="/WM-Trauma-Stat.png"
+                  className="rounded-xl shadow-lg w-full h-auto object-contain"
+                  alt="Who is Most Likely to Experience ACEs?"
+                />
+                <p className="text-xs text-cream-300 mt-2 opacity-70">
+                  Source: Georgetown University School of Nursing. “Who Is Most
+                  Vulnerable to Adverse Childhood Experiences?” Retrieved from:
+                  https://online.nursing.georgetown.edu/blog/women-trauma-ptsd/
+                </p>
+              </div>
             ),
           },
 
@@ -136,8 +133,8 @@ image: (
                   <li>Depression and emotional numbing</li>
                   <li>Eating disorders</li>
                   <li>Substance misuse</li>
-                  <li>Difficulty with intimacy and relationships</li>
-                  <li>Self-esteem damage and identity disruption</li>
+                  <li>Difficulty with intimacy</li>
+                  <li>Identity disruption</li>
                 </ul>
 
                 <p className="mt-4">
@@ -147,22 +144,24 @@ image: (
                 </p>
               </>
             ),
-           image: (
-            <div className="flex flex-col items-center>
-            <img
-          src="/Body-Mind-Soul.png"
-          className="rounded-xl shadow-lg w-full h-auto object-contain"
-              alt="Body, Mind, and Soul are Affected"
-              />
-          <p className="text-xs text-cream-300 mt-2 opacity-70">
-          Source: Medica Mondiale. “Overcoming Trauma: Transgenerational Trauma.”
-          Retrieved from https://medicamondiale.org/en/violence-against-women/overcoming-trauma/transgenerational-trauma
-          </p>
+            image: (
+              <div className="flex flex-col items-center">
+                <img
+                  src="/Body-Mind-Soul.png"
+                  className="rounded-xl shadow-lg w-full h-auto object-contain"
+                  alt="Body, Mind, and Soul Trauma Impact"
+                />
+                <p className="text-xs text-cream-300 mt-2 opacity-70">
+                  Source: Medica Mondiale. “Overcoming Trauma: Transgenerational
+                  Trauma.” Retrieved from:
+                  https://medicamondiale.org/en/violence-against-women/overcoming-trauma/transgenerational-trauma
+                </p>
+              </div>
             ),
           },
 
           /* --------------------------------------------------------- */
-          /* 4 — IMMIGRATIONAL TRAUMA & ACCULTURATION STRESS          */
+          /* 4 — IMMIGRATIONAL TRAUMA                                 */
           /* --------------------------------------------------------- */
           {
             title: "Immigration & Intergenerational Trauma",
@@ -172,36 +171,38 @@ image: (
               <>
                 <p>
                   Immigration trauma stems from war, displacement, persecution,
-                  economic pressure, or environmental crises. Refugee and
-                  immigrant parents often carry unprocessed trauma that shapes
-                  how children learn about danger, belonging, and identity.
+                  economic pressure, or environmental crises. These unresolved
+                  stressors shape how children learn about fear, belonging, and
+                  identity.
                 </p>
 
                 <ul className="list-disc list-inside mt-4 space-y-1">
-                  <li>Second-generation children inherit “survival rules”</li>
-                  <li>Emotional silence used to preserve family stability</li>
-                  <li>Role reversal (child becomes translator/caretaker)</li>
-                  <li>Fear of deportation or instability affects development</li>
+                  <li>Children inherit “survival rules”</li>
+                  <li>Emotional silence preserves stability</li>
+                  <li>Role reversal (child as translator/caretaker)</li>
+                  <li>Fear of deportation or instability</li>
                 </ul>
 
                 <p className="mt-4">
-                  Research highlights that children of immigrants often struggle
-                  with perfectionism, guilt, anxiety, and identity conflict —
-                  even if they were never exposed to the original trauma.
+                  Children of immigrants often struggle with perfectionism,
+                  guilt, anxiety, and identity conflict — even without direct
+                  exposure to trauma.
                 </p>
               </>
             ),
-           image: (
-            <div className="flex flex-col items-center>
-            <img
-          src="/IM-Trauma.png"
-          className="rounded-xl shadow-lg w-full h-auto object-contain"
-              alt="Immigrational Trauma"
-              />
-             <p className="text-xs text-cream-300 mt-2 opacity-70">
-            Source: Immigrant Learning Center (ILC). “Understanding Immigrant Trauma.”
-            Retrieved from https://www.ilctr.org/about-immigrants/ilc-publications-and-resources/understanding-immigrant-trauma/
-            </p>
+            image: (
+              <div className="flex flex-col items-center">
+                <img
+                  src="/IM-Trauma.png"
+                  className="rounded-xl shadow-lg w-full h-auto object-contain"
+                  alt="Immigrant Trauma"
+                />
+                <p className="text-xs text-cream-300 mt-2 opacity-70">
+                  Source: Immigrant Learning Center (ILC). “Understanding
+                  Immigrant Trauma.” Retrieved from:
+                  https://www.ilctr.org/about-immigrants/ilc-publications-and-resources/understanding-immigrant-trauma/
+                </p>
+              </div>
             ),
           },
 
@@ -215,11 +216,10 @@ image: (
             content: (
               <>
                 <p>
-                  Historical trauma refers to the collective emotional and
-                  psychological injury carried across generations within
-                  communities that have endured systemic oppression. Examples
-                  include enslavement, genocide, colonization, forced
-                  displacement, and racial violence.
+                  Historical trauma refers to the collective emotional injury
+                  carried across generations within marginalized communities who
+                  have experienced systemic violence, colonization, or forced
+                  displacement.
                 </p>
 
                 <ul className="list-disc list-inside mt-4 space-y-1">
@@ -230,23 +230,24 @@ image: (
                 </ul>
 
                 <p className="mt-4">
-                  The effects ripple through families: emotional suppression,
-                  hypervigilance, harsh survival behaviors, and altered
-                  worldviews are often passed to younger generations.
+                  Emotional suppression, hypervigilance, and harsh survival
+                  behaviors are often passed to younger generations.
                 </p>
               </>
             ),
-          image: (
-            <div className="flex flex-col items-center>
-            <img
-          src="/NA-Historical-Trauma.png"
-          className="rounded-xl shadow-lg w-full h-auto object-contain"
-              alt="Historical Trauma Amongst Native Americans"
-              />
-            <p className="text-xs text-cream-300 mt-2 opacity-70">
-            Image courtesy of Arcsault Tribe. “Native Americans Experience Intergenerational and Historical Trauma.”
-            Retrieved from https://www.arcsaulttribe.com/arc-articles/native-americans-experience-intergenerational-and-historical-trauma
-            </p>
+            image: (
+              <div className="flex flex-col items-center">
+                <img
+                  src="/NA-Historical-Trauma.png"
+                  className="rounded-xl shadow-lg w-full h-auto object-contain"
+                  alt="Historical Trauma Among Native Americans"
+                />
+                <p className="text-xs text-cream-300 mt-2 opacity-70">
+                  Image courtesy of Arcsault Tribe. “Native Americans Experience
+                  Intergenerational and Historical Trauma.” Retrieved from:
+                  https://www.arcsaulttribe.com/arc-articles/native-americans-experience-intergenerational-and-historical-trauma
+                </p>
+              </div>
             ),
           },
 
@@ -261,39 +262,39 @@ image: (
               <>
                 <p>
                   Colorism — discrimination within the same racial or ethnic
-                  group based on skin tone — has deep historical roots and acts
-                  as a form of intergenerational trauma. It shapes identity,
-                  belonging, and emotional safety within families.
+                  group based on skin tone — acts as a form of intergenerational
+                  trauma. It shapes identity, belonging, and emotional safety.
                 </p>
 
                 <ul className="list-disc list-inside mt-4 space-y-1">
-                  <li>Internalized belief in color-based hierarchy</li>
-                  <li>Family conflict based on appearance</li>
-                  <li>Shame tied to cultural identity</li>
-                  <li>Long-term effects on self-esteem and relationships</li>
+                  <li>Internalized color hierarchy</li>
+                  <li>Family conflict</li>
+                  <li>Shame tied to identity</li>
+                  <li>Long-term effects on relationships</li>
                 </ul>
 
                 <p className="mt-4">
-                  This trauma contributes to emotional suppression, perfectionism,
-                  and cycles of relational harm — especially in children trying
-                  to meet beauty standards not rooted in their own culture.
+                  Colorism contributes to emotional suppression, perfectionism,
+                  and relational harm — especially in children absorbing harmful
+                  beauty standards.
                 </p>
               </>
             ),
-           image: (
-            <div className="flex flex-col items-center>
-            <img
-          src="/Colorism-trauma.png"
-          className="rounded-xl shadow-lg w-full h-auto object-contain"
-              alt="How Trauma Is Passed Down"
-              />
-             <p className="text-xs text-cream-300 mt-2 opacity-70">
-            Image courtesy of LHS Lightning Flash. “Colorism and Its Existence Within Society.”
-            Retrieved from https://lrhslightningflash.com/4545/opinions/colorism-and-its-existence-within-society/
-            </p>
+            image: (
+              <div className="flex flex-col items-center">
+                <img
+                  src="/Colorism-trauma.png"
+                  className="rounded-xl shadow-lg w-full h-auto object-contain"
+                  alt="Colorism Trauma"
+                />
+                <p className="text-xs text-cream-300 mt-2 opacity-70">
+                  Image courtesy of LHS Lightning Flash. “Colorism and Its
+                  Existence Within Society.” Retrieved from:
+                  https://lrhslightningflash.com/4545/opinions/colorism-and-its-existence-within-society/
+                </p>
+              </div>
             ),
           },
-
         ]}
       />
     </div>
