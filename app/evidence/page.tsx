@@ -133,6 +133,12 @@ export default function EvidencePage() {
                 </p>
               </>
             ),
+            image: (
+            <img
+          src="/Body-Mind-Soul.png"
+          className="rounded-xl shadow-lg w-full h-auto object-contain"
+              />
+            ),
           },
 
           /* --------------------------------------------------------- */
