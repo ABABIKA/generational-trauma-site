@@ -93,6 +93,12 @@ export default function EvidencePage() {
                 </p>
               </>
             ),
+            image: (
+            <img
+          src="/WM-Trauma-Stat.png"
+          className="rounded-xl shadow-lg w-full h-auto object-contain"
+              />
+            ),
           },
 
           /* --------------------------------------------------------- */
