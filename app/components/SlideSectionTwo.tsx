@@ -9,7 +9,6 @@ interface Slide {
   bg?: string;
   textColor?: string;
   content: React.ReactNode;
-  image?: React.ReactNode; // <-- image passed in from page
 }
 
 interface Props {
@@ -50,24 +49,6 @@ export default function SlideSectionTwo({ slides }: Props) {
                 <div className="text-lg leading-relaxed space-y-4">
                   {slide.content}
                 </div>
-              </motion.div>
-
-              {/* IMAGE SIDE */}
-              <motion.div
-                initial={{ opacity: 0, x: isLeft ? 80 : -80 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-                viewport={{ once: false, amount: 0.4 }}
-                className={`flex items-center justify-center 
-                  ${isLeft ? "order-2 md:order-1" : "order-1 md:order-2"}`}
-              >
-                {slide.image ? (
-                  slide.image
-                ) : (
-                  <div className="w-full h-[300px] md:h-[400px] bg-black/20 border border-white/20 rounded-xl flex items-center justify-center text-white/60">
-                    No image provided
-                  </div>
-                )}
               </motion.div>
 
             </div>
