@@ -52,10 +52,18 @@ export default function EvidencePage() {
               </>
             ),
             image: (
+            <div className="flex flex-col items-center>
             <img
           src="/trauma-pass.png"
           className="rounded-xl shadow-lg w-full h-auto object-contain"
+              alt="How Trauma Is Passed Down"
               />
+
+          <p className="text-xs text-cream-300 mt-2 opacity-70">
+          Source: Medica Mondiale. “Transgenerational Trauma.” 
+          Retrieved from https://medicamondiale.org/en/violence-against-women/overcoming-trauma/transgenerational-trauma
+          </p>
+          </div>
             ),
           },
 
@@ -93,11 +101,17 @@ export default function EvidencePage() {
                 </p>
               </>
             ),
-            image: (
+image: (
+            <div className="flex flex-col items-center>
             <img
           src="/WM-Trauma-Stat.png"
           className="rounded-xl shadow-lg w-full h-auto object-contain"
+              alt="Who is Most Likely to Experience ACEs?"
               />
+            <p className="text-xs text-cream-300 mt-2 opacity-70">
+  Source: Georgetown University School of Nursing. “Who Is Most Vulnerable to Adverse Childhood Experiences?”
+  Retrieved from https://online.nursing.georgetown.edu/blog/women-trauma-ptsd/
+</p>
             ),
           },
 
@@ -133,11 +147,17 @@ export default function EvidencePage() {
                 </p>
               </>
             ),
-            image: (
+           image: (
+            <div className="flex flex-col items-center>
             <img
           src="/Body-Mind-Soul.png"
           className="rounded-xl shadow-lg w-full h-auto object-contain"
+              alt="Body, Mind, and Soul are Affected"
               />
+          <p className="text-xs text-cream-300 mt-2 opacity-70">
+          Source: Medica Mondiale. “Overcoming Trauma: Transgenerational Trauma.”
+          Retrieved from https://medicamondiale.org/en/violence-against-women/overcoming-trauma/transgenerational-trauma
+          </p>
             ),
           },
 
@@ -171,11 +191,17 @@ export default function EvidencePage() {
                 </p>
               </>
             ),
-            image: (
+           image: (
+            <div className="flex flex-col items-center>
             <img
           src="/IM-Trauma.png"
           className="rounded-xl shadow-lg w-full h-auto object-contain"
+              alt="Immigrational Trauma"
               />
+             <p className="text-xs text-cream-300 mt-2 opacity-70">
+            Source: Immigrant Learning Center (ILC). “Understanding Immigrant Trauma.”
+            Retrieved from https://www.ilctr.org/about-immigrants/ilc-publications-and-resources/understanding-immigrant-trauma/
+            </p>
             ),
           },
 
@@ -210,6 +236,18 @@ export default function EvidencePage() {
                 </p>
               </>
             ),
+          image: (
+            <div className="flex flex-col items-center>
+            <img
+          src="/NA-Historical-Trauma.png"
+          className="rounded-xl shadow-lg w-full h-auto object-contain"
+              alt="Historical Trauma Amongst Native Americans"
+              />
+            <p className="text-xs text-cream-300 mt-2 opacity-70">
+            Image courtesy of Arcsault Tribe. “Native Americans Experience Intergenerational and Historical Trauma.”
+            Retrieved from https://www.arcsaulttribe.com/arc-articles/native-americans-experience-intergenerational-and-historical-trauma
+            </p>
+            ),
           },
 
           /* --------------------------------------------------------- */
@@ -241,6 +279,18 @@ export default function EvidencePage() {
                   to meet beauty standards not rooted in their own culture.
                 </p>
               </>
+            ),
+           image: (
+            <div className="flex flex-col items-center>
+            <img
+          src="/Colorism-trauma.png"
+          className="rounded-xl shadow-lg w-full h-auto object-contain"
+              alt="How Trauma Is Passed Down"
+              />
+             <p className="text-xs text-cream-300 mt-2 opacity-70">
+            Image courtesy of LHS Lightning Flash. “Colorism and Its Existence Within Society.”
+            Retrieved from https://lrhslightningflash.com/4545/opinions/colorism-and-its-existence-within-society/
+            </p>
             ),
           },
 
