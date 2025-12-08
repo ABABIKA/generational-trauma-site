@@ -56,15 +56,7 @@ export default function SlideSectionTwo({ slides }: Props) {
 
               <div className="text-lg leading-relaxed space-y-4">
                 {slide.content}
-              </div>
-              {/* Image Side */}
-              <div className="flex items-center justify-center">
-                {image ? (
-                  image
-                ): {
-                  <div className=
-                }
-                }
+                </div>
               </div>
             </motion.div>
           </section>
