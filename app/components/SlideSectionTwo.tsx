@@ -57,7 +57,6 @@ export default function SlideSectionTwo({ slides }: Props) {
               <div className="text-lg leading-relaxed space-y-4">
                 {slide.content}
                 </div>
-              </div>
             </motion.div>
           </section>
         );
